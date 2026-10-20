@@ -147,3 +147,8 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+
+# Custom Chrome Extension Protection Rules
+*.pem
+*.crx
