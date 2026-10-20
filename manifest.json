@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Splunk Search Logger",
+  "version": "1.2",
+  "author": "TokenSolution (https://github.com)",
+  "permissions": [
+    "tabs", 
+    "history",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  }
+}

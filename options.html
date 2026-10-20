@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Splunk Web Browser Logger Configuration</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; width: 340px; margin: 0; background-color: #f9f9f9; }
+    h3 { margin-top: 0; color: #333; }
+    .field { margin-bottom: 12px; }
+    label { display: block; margin-bottom: 4px; font-weight: bold; font-size: 13px; }
+    input { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    button { width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    button:hover { background-color: #45a049; }
+    #status { margin-top: 10px; font-size: 13px; text-align: center; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h3>Splunk Configuration</h3>
+  <div class="field">
+    <label for="hecUrl">Splunk HEC URL:</label>
+    <input type="text" id="hecUrl" placeholder="http://192.168.1.100:8080/services/collector/event">
+  </div>
+  <div class="field">
+    <label for="token">HEC Token:</label>
+    <input type="password" id="token" placeholder="Enter HEC Token">
+  </div>
+  <button id="saveBtn" type="button">Save Configuration</button>
+  <div id="status"></div>
+
+  <!-- Credit Footer -->
+  <footer style="margin-top: 25px; text-align: center; font-size: 11px; color: #777; border-top: 1px dashed #ddd; padding-top: 10px;">
+    Maintained by <a href="https://github.com" target="_blank" style="color: #4CAF50; text-decoration: none; font-weight: bold;">TokenSolution</a>
+  </footer>
+
+  <script src="options.js"></script>
+</body>
+
+</html>
