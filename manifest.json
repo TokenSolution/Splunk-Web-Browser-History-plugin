@@ -5,7 +5,6 @@
   "author": "TokenSolution (https://github.com)",
   "permissions": [
     "tabs", 
-    "history",
     "storage",
     "scripting"
   ],
